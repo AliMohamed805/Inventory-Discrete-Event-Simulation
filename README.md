@@ -1,5 +1,3 @@
-# Inventory Discrete Event Simulation
-
 # Inventory Discrete-Event Simulation
 
 A discrete-event simulation of a warehouse inventory system, built with [SimPy](https://simpy.readthedocs.io/). The model simulates customer demand, an (s, S) reorder policy, order lead times, and tracks inventory levels, revenue, and holding/ordering costs over time.
@@ -24,30 +22,6 @@ This is a classic (s, S) periodic-review inventory policy, implemented as an eve
 - **Pandas** — data handling
 - **Matplotlib** — visualization of inventory level over time
 - **Jupyter Notebook** — development and experimentation environment
-
-## Setup
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/inventory-discrete-simulation.git
-   cd inventory-discrete-simulation
-   ```
-
-2. Create a virtual environment (optional but recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install numpy pandas simpy matplotlib jupyter
-   ```
-
-4. Launch the notebook:
-   ```bash
-   jupyter notebook Inventory_Discrete_Simulation.ipynb
-   ```
 
 ## Usage
 
@@ -104,20 +78,3 @@ A sample run with `order_cutoff=5`, `order_target=30`, and a fixed random seed p
 ```
 
 ...alongside a step plot showing inventory sawtoothing between the reorder point and the target level as demand depletes stock and periodic orders replenish it.
-
-## Contributing
-
-Contributions are welcome. If you'd like to extend the simulation (e.g., variable lead times, multiple SKUs, service-level metrics, or refactoring to the class-based design), please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes with clear messages
-4. Open a pull request describing the change and motivation
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Acknowledgments
-
-This project was built while applying concepts from DataCamp's *Discrete Event Simulation in Python* and *Monte Carlo Simulations in Python* courses. See `course_acknowledgment.md` for details.
